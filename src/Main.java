@@ -1,4 +1,6 @@
-package com.mycompany.projeto;
+package src;
+
+import src.services.CadastroService;
 
 public class Main {
     
@@ -18,16 +20,16 @@ public class Main {
             case 0:
                 break;
             case 1:
-                CadastroNotas();
+                CadastroService();
                 break;
             case 2:
-                ExibirBoletim();
+                BoletimService();
                 break;
             case 3:
-                //ExibirMedias();
+                MediaService();
                 break;
             case 4:
-                //ExibirSituacao();
+                SituacaoService();
                 break;
             default:
                 IO.println("\nOpção inválida!");
