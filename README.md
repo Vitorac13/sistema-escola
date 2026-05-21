@@ -43,7 +43,6 @@ O sistema trabalha com:
 
 * Java 25
 * Programação estruturada
-* Arrays multidimensionais
 
 ## Estrutura Inicial do Projeto
 
@@ -108,7 +107,7 @@ O projeto pode ser expandido para incluir:
 * Aluno com menor média
 * Média geral da escola
 * Ranking das turmas
-* Persistência em arquivo
+* Banco de dados
 * Interface gráfica
 
 ## Como Executar
@@ -116,7 +115,7 @@ O projeto pode ser expandido para incluir:
 1. Clone o repositório:
 
 ```bash
-git clone https://github.com/seu-usuario/sistema-escola.git
+git clone https://github.com/Vitorac13/sistema-escola.git
 ```
 
 2. Entre na pasta do projeto:
@@ -143,7 +142,6 @@ Este projeto foi desenvolvido com foco em:
 
 * Prática de lógica de programação
 * Organização de projetos Java
-* Manipulação de arrays multidimensionais
 * Modularização de código
 * Programação orientada a objetos
 * Estruturas de repetição e decisão
