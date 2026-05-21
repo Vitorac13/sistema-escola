@@ -57,6 +57,7 @@ sistema-escola/
 │   │   ├── CadastroService.java
 │   │   ├── BoletimService.java
 │   │   ├── MediaService.java
+│   │   ├── NotasService.java
 │   │   └── SituacaoService.java
 │   └── utils/
 │       └── IO.java

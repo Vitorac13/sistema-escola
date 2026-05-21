@@ -70,15 +70,6 @@ void CadastroNotas(float dadosAlunos[][][], int turmas, int alunos, int notas){
     IO.println("\nNotas do alunos n° " + a + " cadastradas\n");
 }
 
-/*2. Exibição do boletim
-O sistema deverá mostrar:
-•	turma;
-•	aluno;
-•	notas;
-•	média final;
-•	situação do aluno.
-*/
-
 void ExibirBoletim(float dadosAlunos[][][], int turmas, int alunos, int notas){
 
     

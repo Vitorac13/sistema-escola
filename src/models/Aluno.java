@@ -4,31 +4,19 @@ public class Aluno {
     
     String nome;
     char turma;
-    int nota1;
-    int nota2;
-    int nota3;
-    float media;
-    String situacao;
+    private Float nota1;
+    private Float nota2;
+    private Float nota3;
+    private float media;
+    private String situacao;
 
-    Aluno(String nome) {
+    public Aluno(String nome) {
         this.nome = nome;
     }    
     
-    Aluno(String turma) {
+    Aluno(char turma) {
         this.turma = turma;
     }  
-
-    Aluno(float nota1) {
-        this.nota1 = (int) nota1;
-    }   
-
-    Aluno(float nota2) {
-        this.nota2 = (int) nota2;
-    }  
-
-    Aluno(float nota3) {
-        this.nota3 = (int) nota3;
-    }
 
     Aluno(String nome, char turma) {
         this.nome = nome;
@@ -36,26 +24,36 @@ public class Aluno {
     }
 
     Aluno(float nota1, float nota2, float nota3) {
-        this.nota1 = (int) nota1;
-        this.nota2 = (int) nota2;
-        this.nota3 = (int) nota3;
+        this.nota1 = (Float) nota1;
+        this.nota2 = (Float) nota2;
+        this.nota3 = (Float) nota3;
+    }
+
+    public void imprimirNome(){
+        IO.println("Nome: " + this.nome);
     }
 
     void calcularMedia(){
         this.media = (this.nota1 + this.nota2 + this.nota3) / 3;
     }
 
-    void calcularSituacao(){
+    public void calcularSituacao(){
+        if(this.nota1 == null || this.nota2 == null || this.nota3 == null){
+            IO.println("Notas não cadastradas. Impossível calcular situação.");
+            return;
+        }
         if(this.media >= 7){
             this.situacao = "Aprovado";
-        } else if(this.media >= 5){
+        }
+        if(this.media >= 5){
             this.situacao = "Recuperação";
-        } else {
+        }
+        if(this.media < 5){
             this.situacao = "Reprovado";
         }
     }
 
-    void exibirBoletim(){
+    public void exibirBoletim(){
         IO.println("\nNome: " + this.nome);
         IO.println("Turma: " + this.turma);
         IO.println("Nota 1: " + this.nota1);
